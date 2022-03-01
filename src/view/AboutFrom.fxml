@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AboutContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutFormController">
+    <children>
+        <ImageView fitHeight="576.0" fitWidth="1064.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../background/loginMenu.jpg" />
+            </image>
+        </ImageView>
+      <Pane layoutX="53.0" layoutY="25.0" prefHeight="152.0" prefWidth="479.0" style="-fx-background-color: #95afc0; -fx-background-radius: 20;">
+         <children>
+            <Text fill="#c0392b" layoutX="15.0" layoutY="37.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Oceanic Hotel Room Amenities">
+               <font>
+                  <Font name="Bell MT Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#2c3e50" layoutX="35.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amenities are in all rooms unless noted otherwise.">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b1387" layoutX="47.0" layoutY="82.0" opacity="0.88" strokeType="OUTSIDE" strokeWidth="0.0" text="Air Conditioning                          Balcony/Terrace&#10;Coffeemaker (some)                    Daily Maid Service&#10;Mini-Bar                                       Free Newspaper&#10;Rooms for Non-smokers              Telephone" wrappingWidth="428.0">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="53.0" layoutY="196.0" opacity="0.89" prefHeight="345.0" prefWidth="378.0" style="-fx-background-color: #95afc0; -fx-background-radius: 20;">
+         <children>
+            <Text fill="#c0392b" layoutX="15.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Oceanic Hotel Recreation">
+               <font>
+                  <Font name="Bell MT Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#2c3e50" layoutX="35.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="On-Site Activities">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b1387" layoutX="47.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beach&#10;Fishing&#10;Game Room&#10;Health Club&#10;Pool (Indoor Pool, Outdoor Pool)&#10;Scuba Diving&#10;Tennis (Outdoor Tennis)" wrappingWidth="222.0">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#2c3e50" layoutX="35.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nearby Activities">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b1387" layoutX="54.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bicycling&#10;Boating/Sailing&#10;Shopping Mall/Area&#10;Water Skiing" wrappingWidth="239.0">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="501.0" layoutY="196.0" opacity="0.89" prefHeight="345.0" prefWidth="512.0" style="-fx-background-color: #95afc0; -fx-background-radius: 20;">
+         <children>
+            <Text fill="#c0392b" layoutX="16.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Oceanic Hotel Hotel Services &amp; Facilities">
+               <font>
+                  <Font name="Bell MT Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#2c3e50" layoutX="35.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guest Services">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b1387" layoutX="47.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Babysitting/Child Care&#10;Barber/Hair Stylist&#10;Car RentalConcierge/Club Floor&#10;Currency Exchange&#10;Gift ShopLaundry/Dry Cleaning &#10;Service&#10;Multi-lingual Staff&#10;Free Onsite Parking&#10;Room Service&#10;Wheelchair Access to Common/Public Areas" wrappingWidth="355.0781440734863">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#2c3e50" layoutX="35.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Security Services">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b1387" layoutX="47.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Smoke Alarm in Rooms" wrappingWidth="212.0">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+       <ImageView fitHeight="57.0" fitWidth="65.0" layoutX="965.0" layoutY="31.0" onMouseClicked="#HomePageOnAction" pickOnBounds="true" preserveRatio="true">
+          <image>
+             <Image url="@../background/home.png" />
+          </image>
+       </ImageView>
+       <Text layoutX="846.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©2022 Nimma Design Crowd">
+          <font>
+             <Font name="Calisto MT Bold" size="12.0" />
+          </font>
+       </Text>
+    </children>
+</AnchorPane>

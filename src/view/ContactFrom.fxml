@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ContactContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ContactFormController">
+    <children>
+        <ImageView fitHeight="576.0" fitWidth="1064.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../background/loginMenu.jpg" />
+            </image>
+        </ImageView>
+      <Text fill="#c7ecee" layoutX="532.0" layoutY="185.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Ocean Resort, &#10;Welladevala Road,&#10;Yaddehimulla,&#10;Unawatuna,&#10;Sri lanka">
+         <font>
+            <Font name="Bell MT Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#c7ecee" layoutX="532.0" layoutY="369.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="info@blueoceanbeachresort.com&#10;General: +94 912 931 567&#10;Reservations: +9471 555 4441 | +9476 444 4434&#10;Fax: +94 91 243 8840">
+         <font>
+            <Font name="Bell MT Bold" size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="232.0" fitWidth="348.0" layoutX="82.0" layoutY="50.0" pickOnBounds="true">
+         <image>
+            <Image url="@../background/about.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="232.0" fitWidth="348.0" layoutX="82.0" layoutY="300.0" pickOnBounds="true">
+         <image>
+            <Image url="@../background/about2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="65.0" layoutX="965.0" layoutY="31.0" onMouseClicked="#HomePageOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../background/home.png" />
+         </image>
+      </ImageView>
+        <Text layoutX="846.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©2022 Nimma Design Crowd">
+            <font>
+                <Font name="Calisto MT Bold" size="12.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

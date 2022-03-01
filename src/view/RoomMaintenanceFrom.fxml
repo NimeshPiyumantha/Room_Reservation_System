@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="roomMaintenanceContext" prefHeight="576.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomMaintenanceFromController">
+    <children>
+        <ImageView fitHeight="576.0" fitWidth="1064.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../background/loginMenu.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="39.0" layoutY="25.0" opacity="0.83" prefHeight="73.0" prefWidth="987.0" style="-fx-background-color: #273C75; -fx-border-color: #707070; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 1;">
+            <children>
+                <Button layoutX="28.0" layoutY="14.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="191.0" style="-fx-background-color: #636E72; -fx-border-color: #D63031; -fx-border-width: 4; -fx-background-radius: 10; -fx-border-radius: 10;" text="     Receptionist">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="42.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../background/reception.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="330.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnReserveRoom" prefHeight="45.0" prefWidth="191.0" style="-fx-background-color: #10C9AA; -fx-border-color: #D63031; -fx-border-width: 4; -fx-background-radius: 10; -fx-border-radius: 10;" text="         Reserve  Room" textAlignment="CENTER">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="342.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../background/resever.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="561.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnRoomMaintenance" prefHeight="45.0" prefWidth="191.0" style="-fx-background-color: #10C9AA; -fx-border-color: #D63031; -fx-border-width: 4; -fx-background-radius: 10; -fx-border-radius: 10;" text="         Room Maintenance" textAlignment="CENTER">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="785.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnLogout" prefHeight="45.0" prefWidth="156.0" style="-fx-background-color: #10C9AA; -fx-border-color: #D63031; -fx-border-width: 4; -fx-background-radius: 10; -fx-border-radius: 10;" text="      Logout">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="32.0" fitWidth="42.0" layoutX="803.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../background/logOut.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="573.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../background/maintatince.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Text layoutX="870.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©2022 Nimma Design Crowd" />
+      <Pane layoutX="686.0" layoutY="121.0" prefHeight="393.0" prefWidth="293.0" style="-fx-background-color: #2D3436; -fx-border-color: #707070; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <children>
+            <Text fill="#c7ecee" layoutX="27.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Refrigeration&#10;HVAC systems&#10;Heating systems&#10;Flooring and carpeting&#10;Wall paints and wallpapers&#10;Lighting fixtures&#10;Faucets&#10;Room furnishings&#10;Wi-Fi connections&#10;Staff computers&#10;Phone lines&#10;Guest room &#10;TV services" wrappingWidth="250.00000739097595">
+               <font>
+                  <Font name="Bell MT Bold" size="21.0" />
+               </font>
+            </Text>
+            <Text fill="#10c9aa" layoutX="-18.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="      Room Maintenance" wrappingWidth="313.0000134706497">
+               <font>
+                  <Font name="Bell MT Bold" size="23.0" />
+               </font>
+            </Text>
+            <Separator layoutX="14.0" layoutY="38.0" prefHeight="3.0" prefWidth="206.0" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="186.0" fitWidth="293.0" layoutX="76.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../background/maintance.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="186.0" fitWidth="293.0" layoutX="355.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+             <Image url="@../background/maintanc.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

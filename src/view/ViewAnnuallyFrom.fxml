@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ViewAnnuallyContext" prefHeight="576.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewAnnuallyFromController">
+    <children>
+        <ImageView fitHeight="576.0" fitWidth="1064.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../background/income_report.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="37.0" layoutY="25.0" opacity="0.83" prefHeight="73.0" prefWidth="987.0" style="-fx-background-color: #273C75; -fx-border-color: #707070; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 1;">
+            <children>
+                <Button layoutX="34.0" layoutY="10.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="122.0" style="-fx-background-color: #636E72; -fx-border-color: #D63031; -fx-border-width: 4; -fx-background-radius: 10; -fx-border-radius: 10;" text="     Admin">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="42.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../background/admin.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="281.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnRoomOnAction" prefHeight="45.0" prefWidth="122.0" style="-fx-background-color: #10C9AA; -fx-border-color: #D63031; -fx-border-width: 4; -fx-background-radius: 10; -fx-border-radius: 10;" text="     Rooms">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="290.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../background/room.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="461.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnMealOnAction" prefHeight="45.0" prefWidth="122.0" style="-fx-background-color: #10C9AA; -fx-border-color: #D63031; -fx-border-width: 4; -fx-background-radius: 10; -fx-border-radius: 10;" text="     Meal">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="32.0" fitWidth="42.0" layoutX="469.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../background/meal.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="640.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnIncomeOnAction" prefHeight="45.0" prefWidth="122.0" style="-fx-background-color: #10C9AA; -fx-border-color: #D63031; -fx-border-width: 4; -fx-background-radius: 10; -fx-border-radius: 10;" text="       Income&#10;       Reports">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="32.0" fitWidth="42.0" layoutX="648.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../background/report.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="828.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="45.0" prefWidth="122.0" style="-fx-background-color: #10C9AA; -fx-border-color: #D63031; -fx-border-width: 4; -fx-background-radius: 10; -fx-border-radius: 10;" text="      Logout">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="32.0" fitWidth="42.0" layoutX="838.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../background/logOut.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Text layoutX="73.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annually Income Report">
+            <font>
+                <Font name="Bell MT Bold" size="28.0" />
+            </font>
+        </Text>
+        <Separator layoutX="73.0" layoutY="162.0" prefHeight="5.0" prefWidth="300.0" style="-fx-background-color: #2D3436; -fx-border-color: #2D3436;" />
+        <Button layoutX="846.0" layoutY="127.0" mnemonicParsing="false" onAction="#btnViewMonthlyOnAction" prefHeight="35.0" prefWidth="106.0" style="-fx-background-color: #05c46b; -fx-border-color: #1e272e; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="View Monthly">
+            <font>
+                <Font name="Bell MT Bold" size="12.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tblViewAnnually" layoutX="63.0" layoutY="177.0" prefHeight="351.0" prefWidth="932.0">
+            <columns>
+                <TableColumn fx:id="colCheck" prefWidth="131.0" text="Check" />
+                <TableColumn fx:id="col2022" prefWidth="100.0" text="2022" />
+            <TableColumn fx:id="col2023" prefWidth="100.0" text="2023" />
+            <TableColumn fx:id="col2024" prefWidth="100.0" text="2024" />
+            <TableColumn fx:id="col2025" prefWidth="100.0" text="2025" />
+            <TableColumn fx:id="col2026" prefWidth="100.0" text="2026" />
+            <TableColumn fx:id="col2027" prefWidth="100.0" text="2027" />
+            <TableColumn fx:id="col2028" prefWidth="100.0" text="2028" />
+            <TableColumn fx:id="col2029" prefWidth="100.0" text="2029" />
+            </columns>
+        </TableView>
+        <Text layoutX="846.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©2022 Nimma Design Crowd">
+            <font>
+                <Font name="Callisto MT Bold" size="12.0" />
+            </font>
+        </Text>
+        <Label fx:id="DateLbl" layoutX="612.0" layoutY="127.0" prefHeight="22.0" prefWidth="220.0">
+            <font>
+                <Font name="Bell MT Bold" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="BillContext" prefHeight="576.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GustBillFromController">
+   <children>
+      <ImageView fitHeight="576.0" fitWidth="1064.0" pickOnBounds="true">
+         <image>
+            <Image url="@../background/billbcc.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="332.0" layoutY="50.0" prefHeight="491.0" prefWidth="488.0" style="-fx-background-color: #ecf0f1; -fx-border-color: #c0392b; -fx-border-width: 5; -fx-background-radius: 15; -fx-border-radius: 15;">
+         <children>
+            <Text layoutX="20.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Ocean Resort,&#10;Welladevala Road,&#10;Yaddehimulla,&#10;Unawatuna,&#10;Sri lanka" wrappingWidth="122.603515625" />
+            <Text fill="#eb4d4b" layoutX="20.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INVOICE TO :">
+               <font>
+                  <Font name="Bell MT Bold" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="416.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../background/hotelicon.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="407.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Ocean&#10;Hotel" textAlignment="CENTER">
+               <font>
+                  <Font name="Bell MT Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="268.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INVOICE NO">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text layoutX="335.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INVOICE DATE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text layoutX="409.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROOM NO">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Separator layoutX="328.0" layoutY="104.0" orientation="VERTICAL" prefHeight="66.0" prefWidth="1.0" />
+            <Separator layoutX="401.0" layoutY="104.0" orientation="VERTICAL" prefHeight="66.0" prefWidth="1.0" />
+            <JFXTextField fx:id="txtInvoiceNo" layoutX="264.0" layoutY="131.0" prefHeight="24.0" prefWidth="60.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtInvoiceDate" layoutX="336.0" layoutY="131.0" prefHeight="24.0" prefWidth="60.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtInvoiceRNO" layoutX="407.0" layoutY="131.0" prefHeight="24.0" prefWidth="60.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXTextField>
+            <TableView fx:id="tblBill" layoutX="20.0" layoutY="185.0" prefHeight="163.0" prefWidth="441.0">
+               <columns>
+                  <TableColumn fx:id="colService" prefWidth="180.0" text="SERVICE /(DESCRIPTION)" />
+                  <TableColumn fx:id="colUnitCost" prefWidth="95.0" text="UNIT COST" />
+                  <TableColumn fx:id="colQty" prefWidth="78.0" text="QTY" />
+                  <TableColumn fx:id="colBalance" prefWidth="87.0" text="BALANCE" />
+               </columns>
+            </TableView>
+            <Separator layoutX="272.0" layoutY="359.0" prefWidth="200.0" style="-fx-background-color: #2c3e50;" />
+            <Separator layoutX="266.0" layoutY="434.0" prefWidth="200.0" style="-fx-background-color: #2c3e50;" />
+            <Separator layoutX="266.0" layoutY="470.0" prefWidth="200.0" style="-fx-background-color: #2c3e50;" />
+            <Text layoutX="272.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUB TOTAL     :">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text layoutX="272.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SALES TAX      :">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text layoutX="272.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OTHER            :">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#c0392b" layoutX="269.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRAND TOTAL :" />
+            <Text fill="#c40eb4" layoutX="47.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THANK YOU !">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="66.0" fitWidth="48.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../background/billl.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtSubTotal" editable="false" layoutX="342.0" layoutY="403.0" prefHeight="24.0" prefWidth="123.0" />
+            <JFXTextField fx:id="txtTax" editable="false" layoutX="342.0" layoutY="384.0" prefHeight="24.0" prefWidth="123.0" />
+            <JFXTextField fx:id="txtOther" editable="false" layoutX="342.0" layoutY="360.0" prefHeight="24.0" prefWidth="123.0" />
+            <JFXTextField fx:id="txtTotal" editable="false" layoutX="362.0" layoutY="436.0" prefHeight="17.0" prefWidth="102.0" />
+            <Text layoutX="262.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GUST NIC">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="txtInvoiceNIC" layoutX="262.0" layoutY="79.0" prefHeight="24.0" prefWidth="102.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="876.0" layoutY="430.0" onAction="#btnPrintOnaction" prefHeight="42.0" prefWidth="109.0" style="-fx-border-color: #ecf0f1; -fx-border-radius: 15; -fx-background-color: #16a085; -fx-background-radius: 15;" text="PRINT">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="869.0" layoutY="492.0" onAction="#btnSendOnAction" prefHeight="42.0" prefWidth="123.0" style="-fx-border-color: #ecf0f1; -fx-border-radius: 15; -fx-background-color: #16a085; -fx-background-radius: 15;" text="SEND OTHER">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
